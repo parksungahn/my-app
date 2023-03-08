@@ -1,17 +1,22 @@
 import React, {useState} from "react";
 
-const Counter = () => {
+
+//useState 는 값변경시 화명갱신됨.
+
+const Exam_userState_count = () => {
     const [num, setNumber] = useState(0);
     const increase = () => {
         setNumber(num+1);
     };
 
     const decrease = () => {
+
+        setNumber(num-1);
+
         if(num<1)
         {
-            num=0;
+            setNumber(0);
         }
-        setNumber(num-1);
     };
     
     return (
@@ -23,4 +28,4 @@ const Counter = () => {
     )
 }
 
-export default Counter;
+export default Exam_userState_count;

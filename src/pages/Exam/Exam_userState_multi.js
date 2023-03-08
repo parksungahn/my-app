@@ -1,13 +1,27 @@
 import React, {useState} from "react";
 
-const Input2 = () => {
+
+//--멀티 텍스트입력창 값변경시 txtValue값변경
+
+const Exam_userState_multi = () => {
 
 
-    const [inputs, setInputs] = useState({
-          fullname: ""
-        , email: ""
-        , tel: ""
-    });
+
+    const users = [
+        {username:"hong1"
+            ,useremail:"appzzang@gmail.com"}
+        ,
+        {username:"hong2"
+            ,useremail:"appzzang2@gmail.com"}
+    ];
+
+    // const [inputs, setInputs] = useState({
+    //     fullname: ""
+    //     , email: ""
+    //     , tel: ""
+    // });
+
+    const [inputs, setInputs] = useState(...users);
 
     //--변수 추출, 화면에서 변수사용  or  inputs.fullname
     const{fullname, email, tel} = inputs;
@@ -43,13 +57,12 @@ const Input2 = () => {
                     <input type="text" id="tel" value={tel} onChange={onChangeCall}/>
                 </div>
 
-                <p>이름 : {fullname}</p>
-                <p>이메일 : {email}</p>
-                <p>전화번호 : {tel}</p>
-
-                
+                <p>이름2 : {fullname}</p>
+                <p>이메일2 : {email}</p>
+                <p>전화번호2 : {tel}</p>
+ 
             </div>
         );
 }
 
-export default Input2;
+export default Exam_userState_multi;
