@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 //--멀티 텍스트입력창 값변경시 txtValue값변경
 
-const Exam_userState_multi = () => {
+const Exam_useState_multi = () => {
 
 
 
@@ -65,4 +65,4 @@ const Exam_userState_multi = () => {
         );
 }
 
-export default Exam_userState_multi;
+export default Exam_useState_multi;

@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 //useState 는 값변경시 화명갱신됨.
 
-const Exam_userState_count = () => {
+const Exam_useState_count = () => {
     const [num, setNumber] = useState(0);
     const increase = () => {
         setNumber(num+1);
@@ -28,4 +28,4 @@ const Exam_userState_count = () => {
     )
 }
 
-export default Exam_userState_count;
+export default Exam_useState_count;

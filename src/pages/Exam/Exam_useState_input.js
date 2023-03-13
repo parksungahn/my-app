@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 //--텍스트입력창 값변경시 txtValue값변경
-const Exam_userState_input = () => {
+const Exam_useState_input = () => {
     const [txtValue, setTextValue] = useState("");
 
     const onChangeCall = (e) => {
@@ -24,4 +24,4 @@ const Exam_userState_input = () => {
 
 }
 
-export default Exam_userState_input;
+export default Exam_useState_input;
