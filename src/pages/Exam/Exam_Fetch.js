@@ -25,7 +25,6 @@ const Exam_Fetch = () => {
         return githubUser;
     }
 
-
     useEffect(() => {
         showAvatar();
     },[username]);
@@ -35,6 +34,7 @@ const Exam_Fetch = () => {
         setUsername("parksungahn");
 
     };
+
     const onClickCall2 = () => {
         setUsername("hankjoo");
     };
