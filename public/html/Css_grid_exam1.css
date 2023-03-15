@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #181818;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.color1
+{
+    background: #61dafb;
+}
+.color2
+{
+    background: red;
+}
+
+.color3
+{
+    background: blue;
+}
+
+.color4
+{
+    background: yellow;
+}
+
+.color5
+{
+    background: darkgoldenrod;
+}

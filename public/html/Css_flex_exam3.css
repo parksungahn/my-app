@@ -28,12 +28,32 @@ table {
     border:1px solid green;
     background: antiquewhite;
     margin: 5px;
+    width: 150px;
+}
+
+.col1 {
+    width: 70%;
+}
+
+.col2 {
+    width: 30%;
+    background: #61dafb;
+}
+
+.col3 {
+    width: 500px;
+    background: #282c34;
+    color:white;
+}
+
+.images {
+    width:100px;
+    height: 150px;
 }
 
 
-
 /*화면 가로 사이즈가 500일때 적용할 스타일*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width:500px) {
     .movieContainner1{
         display: flex;
         flex-wrap: wrap;

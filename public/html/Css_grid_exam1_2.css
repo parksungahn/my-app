@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+/*한개씩 고정*/
+
+/*.container{*/
+/*    display: grid;*/
+/*    grid-template-columns:  100px 100px 100px;*/
+/*    grid-template-rows: 50px 50px 50px;*/
+/*}*/
+
+
+/*반복횟수 지정*/
+
+/*.container{*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 100px);*/
+/*    grid-template-rows: 100px repeat(10, 50px);*/
+/*}*/
+
+
+/*현재화면의 20%씩 3개씩 60%채움*/
+
+/*grid-template-columns: repeat(3, 20%);*/
+/*비율 1fr 2fr 1fr;   1대 2대 1*/
+repeat (5, 1fr)
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px repeat(10, 50px);
+}
