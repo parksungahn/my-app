@@ -39,6 +39,12 @@ const Exam_useEffect = () => {
     }, [name]);
 
 
+    useEffect( () => {
+            console.log("name");
+    },[])
+
+
+
     return (
         <div>
             <p>hello world</p>

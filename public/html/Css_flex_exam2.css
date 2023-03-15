@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*display: flex;  --flex 박스 형태사용*/
 /*flex-wrap: wrap;    //--화면줄일때 아래로 떨어뜨리*/
 /*flex-direction: row;        //--로우형태*/
@@ -8,23 +10,25 @@
 /*margin-bottom: 3px; //--컨텐츠 외부공간*/
 /*width vw, vh 가로세로 높이는 기준을 모든화면크기를 100으로 잡음. 1vw = 1px
 
-
- */
 /*flex-direction:row 일때 main -> 가로일때 jusifiy-content 가로모드. align-items 는 세로방향*/
-.movieContainner1{
+/*가운데정렬 justify-content: space-around; center */
+
+/*부모박스 width 1000*/
+.flexContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 90%;
     border: 1px solid gray;
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 3px;
+    justify-content: left;
 }
 
-
-.movieContainner2 {
+/*내용 디자인은 table, div 로 조합*/
+.box {
     border:1px solid red;
-    flex-direction: column;
     text-align: center;
     margin: 5px;
     width:220px;
@@ -39,30 +43,27 @@
 
 
 
-/*화면 가로 사이즈가 500일때 적용할 스타일*/
+/*화면 가로 사이즈가 1000px 일때 적용할 스타일*/
 @media screen and (max-width: 1000px) {
-    .movieContainner1{
+    .flexContainer{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 100vw;
+        width: 90%;
         border: 1px solid gray;
         border-radius: 5px;
         padding: 5px;
         margin-bottom: 3px;
+        justify-content: space-around;
     }
 
-
-    .movieContainner2 {
-        border:1px solid blue;
-        flex-direction: column;
+    .box {
+        border:1px solid red;
         text-align: center;
-        color: blue;
         margin: 5px;
         width:220px;
         height: 350px;
     }
-
 
     .images {
         width:200px;

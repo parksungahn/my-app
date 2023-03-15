@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/*h1 태그에 적용*/
+h1 {
+    color: blue
+}
+
+h2 {
+    color: #61dafb
+}
+
+/*class 에 적용*/
+.box1 {
+    color: green
+}
+
+/*위에 box1보다, 2가지적용이 우선적용됨*/
+h1.box1 {
+    color: red
+}
+
+
+/*id logo 에 적용하기*/
+#logo {
+    text-decoration: underline;
+}
+
+/*h1 태그밑에 id=logo 에 적용*/
+h1#logo {
+    color: purple
+}
+
+/*box1 밑에중에 p 태그에 적용, 띄워쓰기*/
+.box1 p {
+    color: red
+}
+
+.box1 li {
+    font-size: 30px;
+}
+
+/*box1 -> div -> ul 태그에 적용*/
+.box1 div ul {
+    background: yellow
+}
+
+/*box1 바로밑에 자식에 접근 > 또는 공백*/
+.box1 > .box2 {
+    text-decoration: underline
+}
+
+.box1 .box2 {
+    color: green
+}
+
+/*h1 태그에 마우스 오버시...배경색변경*/
+h1:hover {
+    background: tomato
+}
+
+
+/*똑같은 형제들중 선택시 nth*/
+/*box1 밑에 ul밑에 li 중에 3번째에...적용 (nth-child)*/
+.box1 ul li:nth-child(3) {
+    text-decoration: underline
+}
+
+/*box1 밑에 ul밑에 li 중에 첫번째 항목에 적용*/
+.box1 ul li:first-child {
+    font-weight: bold
+}
+
+.box1 ul li:last-child {
+    font-weight: bold
+}
+
+/*box3 li 항목의 홀수번째만 적 (odd or 2n+1)   2*0+1=1, 2*1+1=3, 2*2+1=5   =>  1,3,5,7,9*/
+.box3 li:nth-child(odd) {
+    background: #ccc
+}
+
+/*box3 li 항목의 짝수번째만 적 (even or 2n)*/
+.box3 li:nth-child(even) {
+    background: #aaaaff
+}
+
+
+/*box2 밑에 p태그 첫번째적용시 h2가 잇을때 first-of-type (같은무리들중 같은타입)를 써야함.*/
+/*.box2 p:first-child{color:red}*/
+.box2 p:first-of-type {
+    color: red
+}
+
+/*.box1 중에 마지막p*/
+.box1 p:last-of-type {
+    font-size: 50px
+}

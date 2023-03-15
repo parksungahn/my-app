@@ -5,6 +5,7 @@ import React, {useState} from "react";
 
 const Exam_useState_count = () => {
     const [num, setNumber] = useState(0);
+
     const increase = () => {
         setNumber(num+1);
     };

@@ -1,0 +1,74 @@
+<html>
+<!--http://localhost:3000/html/Css_exam1.html-->
+<head>
+    <link href="Css_exam2.css" rel="stylesheet"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        /* display:flex 스타일을 플렉스 모드로사용*/
+        /* flex-direction: row; 기본 가로모드 (지정안할때 기본적용됨)*/
+        /* flex-direction: column; 세로 모드*/
+        /*justify-content: center; 가로방향 가운데정렬*/
+        /*align-items: center; 세로방향 가운데정렬*/
+
+        /*flex 부모에 기본 한개로 적용하면됨. 서브는 table로 디자인*/
+        .box1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: left;
+            background: #ccc;
+            height: 300px;
+            width: 50%;
+        }
+
+        /*flex 자식들 div 태그에 적용*/
+        /*flex-basis:200px  플렉스 사용시 사이즈, 가로일땐 width, 세로모드일땐 height로 적용*/
+        /*width, height 고정시킴*/
+        /*flex-shrink:0 수축안시킬때, 1시킬때 default*/
+        .box1 div {
+            flex-shrink:0;
+            width: 100px;
+            height: 100px;
+            background: #24bbaf;
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        /*p태그 A에 적용*/
+        .box1 p {
+            background: tomato;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+<div class="box1">
+    <p class="a">A</p>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="c">C</div>
+    <div class="c">C</div>
+    <div class="c">C</div>
+</div>
+
+
+</body>
+</html>
