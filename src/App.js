@@ -11,6 +11,7 @@ import Exam_List3 from "./pages/Exam/Exam_List3";
 import Exam_useEffect from "./pages/Exam/Exam_useEffect";
 import Exam_useEffect2 from "./pages/Exam/Exam_useEffect2";
 import Exam_Fetch from "./pages/Exam/Exam_Fetch";
+import Exam_Fetch2 from "./pages/Exam/Exam_Fetch2";
 import Exam_popup from "./pages/Exam/Exam_popup";
 import Temporary from "./pages/Exam/Temporary";
 import Test from "./pages/Exam/Test";
@@ -32,6 +33,7 @@ function App() {
                 | <Link to="/Exam_useEffect">Exam_useEffect</Link>
                 | <Link to="/Exam_useEffect2">Exam_useEffect2</Link>
                 | <Link to="/Exam_Fetch">Exam_Fetch</Link>
+                | <Link to="/Exam_Fetch2">Exam_Fetch2</Link>
                 | <Link to="/Exam_popup">Exam_popup</Link>
                 | <Link to="/Temporary">Temporary</Link>
                 | <Link to="/Test">Test</Link>
@@ -50,6 +52,7 @@ function App() {
                 <Route path="/Exam_useEffect" element={<Exam_useEffect/>}/>
                 <Route path="/Exam_useEffect2" element={<Exam_useEffect2/>}/>
                 <Route path="/Exam_Fetch" element={<Exam_Fetch/>}/>
+                <Route path="/Exam_Fetch2" element={<Exam_Fetch2/>}/>
                 <Route path="/Exam_popup" element={<Exam_popup/>}/>
                 <Route path="/Temporary" element={<Temporary/>}/>
                 <Route path="/Test" element={<Test/>}/>

@@ -7,24 +7,25 @@ const Exam_useState_multi = () => {
 
 
 
-    const users = [
-        {username:"hong1"
-            ,useremail:"appzzang@gmail.com"}
-        ,
-        {username:"hong2"
-            ,useremail:"appzzang2@gmail.com"}
-    ];
 
-    // const [inputs, setInputs] = useState({
-    //     fullname: ""
-    //     , email: ""
-    //     , tel: ""
-    // });
+    // const users = [
+    //     {username:"hong1"
+    //         ,useremail:"appzzang@gmail.com"}
+    // ];
+    //
+    // const [inputs, setInputs] = useState(...users);
 
-    const [inputs, setInputs] = useState(...users);
+    //--optional 변수 추출, 화면에서 변수사용  or  inputs.username
 
-    //--변수 추출, 화면에서 변수사용  or  inputs.fullname
-    const{fullname, email, tel} = inputs;
+    const [name, setName] = useState("");
+
+    const [inputs, setInputs] = useState({
+        username: ""
+        , useremail: ""
+        , tel: ""
+    });
+
+    const{username, useremail, tel} = inputs;
 
     const onChangeCall = (e) => {
         const value = e.target.value;
@@ -43,12 +44,12 @@ const Exam_useState_multi = () => {
             <div>
                 <div>
                     <label>이름</label>
-                    <input type="text" id="fullname" value={inputs.fullname} onChange={onChangeCall}/>
+                    <input type="text" id="username" value={inputs.username} onChange={onChangeCall}/>
                 </div>
 
                 <div>
                     <label>이메일 </label>
-                    <input type="text" id="email" value={email} onChange={onChangeCall}/>
+                    <input type="text" id="useremail" value={useremail} onChange={onChangeCall}/>
                 </div>
 
 
@@ -57,10 +58,14 @@ const Exam_useState_multi = () => {
                     <input type="text" id="tel" value={tel} onChange={onChangeCall}/>
                 </div>
 
-                <p>이름2 : {fullname}</p>
-                <p>이메일2 : {email}</p>
+
+                <p><button onClick={()=>{setName("kim")}} >click</button></p>
+
+                <p>이름2 : {username}</p>
+                <p>이메일2 : {useremail}</p>
                 <p>전화번호2 : {tel}</p>
- 
+                <p>name : {name}</p>
+
             </div>
         );
 }

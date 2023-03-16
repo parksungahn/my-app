@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*공백없애기*/
 body {
     width: 100vw;
     height: 100vh;
@@ -18,24 +19,46 @@ body {
 }
 .color1
 {
-    background: #61dafb;
+    background: #018d44;
 }
 .color2
 {
-    background: red;
+    background: #ffffff;
 }
 
 .color3
 {
-    background: blue;
+    background: #c72a35;;
 }
 
 .color4
 {
-    background: yellow;
+    background: #002552;
 }
 
 .color5
 {
-    background: darkgoldenrod;
+    background: #ffffff;
+}
+
+.color6
+{
+    background: #c81025;
+}
+
+.color7
+{
+    background: blue;
+}
+
+
+.color8
+{
+    background: #ffffff;
+}
+
+
+.color9
+{
+    background: #c72a35;
 }
