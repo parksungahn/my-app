@@ -15,7 +15,7 @@ const Exam_List2 = () => {
     ];
 
     //--map 돌릴때만 key 필요함.
-    const renderMovies = movies.map((movie_item) => {
+    const renderMovies = movies.map(movie_item => {
         return (
                 <div key={movie_item.id} className={classes.movieContainner2} >
                     <div className={classes.movieTitle}>{movie_item.title}</div>
