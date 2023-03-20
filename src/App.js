@@ -13,6 +13,10 @@ import Exam_useEffect2 from "./pages/Exam/Exam_useEffect2";
 import Exam_Fetch from "./pages/Exam/Exam_Fetch";
 import Exam_Fetch2 from "./pages/Exam/Exam_Fetch2";
 import Exam_Fetch_axios from "./pages/Exam/Exam_Fetch_axios";
+import Exam_Fetch_axios2 from "./pages/Exam/Exam_Fetch_axios2";
+import Exam_Fetch_axios_api from "./pages/Exam/Exam_Fetch_axios_api";
+import Exam_ReduxToolkit from "./pages/Redux/Exam_ReduxToolkit";
+import Exam_ReduxToolkit2 from "./pages/Redux2/Exam_ReduxToolkit2";
 import Exam_popup from "./pages/Exam/Exam_popup";
 import Temporary from "./pages/Exam/Temporary";
 import Test from "./pages/Exam/Test";
@@ -36,6 +40,10 @@ function App() {
                 | <Link to="/Exam_Fetch">Exam_Fetch</Link>
                 | <Link to="/Exam_Fetch2">Exam_Fetch2</Link>
                 | <Link to="/Exam_Fetch_axios">Exam_Fetch_axios</Link>
+                | <Link to="/Exam_Fetch_axios2">Exam_Fetch_axios2</Link>
+                | <Link to="/Exam_Fetch_axios_api">Exam_Fetch_axios_api</Link>
+                | <Link to="/Exam_ReduxToolkit">Exam_ReduxToolkit</Link>
+                | <Link to="/Exam_ReduxToolkit2">Exam_ReduxToolkit2</Link>
                 | <Link to="/Exam_popup">Exam_popup</Link>
                 | <Link to="/Temporary">Temporary</Link>
                 | <Link to="/Test">Test</Link>
@@ -53,9 +61,13 @@ function App() {
                 <Route path="/Exam_List3" element={<Exam_List3/>}/>
                 <Route path="/Exam_useEffect" element={<Exam_useEffect/>}/>
                 <Route path="/Exam_useEffect2" element={<Exam_useEffect2/>}/>
-                <Route path="/Exam_Fetch_axios" element={<Exam_Fetch_axios/>}/>
                 <Route path="/Exam_Fetch" element={<Exam_Fetch/>}/>
                 <Route path="/Exam_Fetch2" element={<Exam_Fetch2/>}/>
+                <Route path="/Exam_Fetch_axios" element={<Exam_Fetch_axios/>}/>
+                <Route path="/Exam_Fetch_axios2" element={<Exam_Fetch_axios2/>}/>
+                <Route path="/Exam_Fetch_axios_api" element={<Exam_Fetch_axios_api/>}/>
+                <Route path="/Exam_ReduxToolkit" element={<Exam_ReduxToolkit/>}/>
+                <Route path="/Exam_ReduxToolkit2" element={<Exam_ReduxToolkit2/>}/>
                 <Route path="/Exam_popup" element={<Exam_popup/>}/>
                 <Route path="/Temporary" element={<Temporary/>}/>
                 <Route path="/Test" element={<Test/>}/>
