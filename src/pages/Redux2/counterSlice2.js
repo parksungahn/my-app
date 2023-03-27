@@ -2,7 +2,7 @@ import {createSlice} from '@reduxjs/toolkit';
 
 //--파라미터사용값 action.payload
 const counterSlice2 = createSlice({
-    name: 'countSlice2',
+    name: 'counterSlice',
     initialState: {value: 0},
     reducers: {
         up2: (state, action) => {

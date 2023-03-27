@@ -9,7 +9,7 @@ const counterSlice2 = createSlice({
             state.value = state.value + action.payload;
         }
         , down2: (state, action) => {
-            state.value = state.value + action.payload;
+            state.value = state.value - action.payload;
         }
         , init2: (state, action) => {
             state.value = 0;

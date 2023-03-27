@@ -7,7 +7,7 @@ const storeInitailState = {
 
 //--파라미터사용값 action.payload
 const counterSlice = createSlice({
-    name: 'countSlice',
+    name: 'counterSlice',
     initialState: storeInitailState,
     reducers: {
          init: (state, action) => {

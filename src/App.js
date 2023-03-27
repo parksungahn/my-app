@@ -15,8 +15,12 @@ import Exam_Fetch2 from "./pages/Exam/Exam_Fetch2";
 import Exam_Fetch_axios from "./pages/Exam/Exam_Fetch_axios";
 import Exam_Fetch_axios2 from "./pages/Exam/Exam_Fetch_axios2";
 import Exam_Fetch_axios_api from "./pages/Exam/Exam_Fetch_axios_api";
-import Exam_ReduxToolkit from "./pages/Redux/Exam_ReduxToolkit";
+import Exam_ReduxToolkit1 from "./pages/Redux/Exam_ReduxToolkit1";
+import Exam_ReduxToolkit1_2 from "./pages/Redux/Exam_ReduxToolkit1_2";
 import Exam_ReduxToolkit2 from "./pages/Redux2/Exam_ReduxToolkit2";
+import Redux_thunk_Exam1 from "./pages/Redux_thunk/Redux_thunk_Exam1";
+import Redux_thunk_Exam2 from "./pages/Redux_thunk2/Redux_thunk_Exam2";
+import Exam_ReduxToolkit_temp from "./pages/Redux2_temp/Exam_ReduxToolkit_temp";
 import Exam_popup from "./pages/Exam/Exam_popup";
 import Temporary from "./pages/Exam/Temporary";
 import Test from "./pages/Exam/Test";
@@ -42,8 +46,12 @@ function App() {
                 | <Link to="/Exam_Fetch_axios">Exam_Fetch_axios</Link>
                 | <Link to="/Exam_Fetch_axios2">Exam_Fetch_axios2</Link>
                 | <Link to="/Exam_Fetch_axios_api">Exam_Fetch_axios_api</Link>
-                | <Link to="/Exam_ReduxToolkit">Exam_ReduxToolkit</Link>
+                | <Link to="/Exam_ReduxToolkit1">Exam_ReduxToolkit1</Link>
+                | <Link to="/Exam_ReduxToolkit1_2">Exam_ReduxToolkit1_2</Link>
                 | <Link to="/Exam_ReduxToolkit2">Exam_ReduxToolkit2</Link>
+                | <Link to="/Redux_thunk_Exam1">Redux_thunk_Exam1</Link>
+                | <Link to="/Redux_thunk_Exam2">Redux_thunk_Exam2</Link>
+                | <Link to="/Exam_ReduxToolkit_temp">Exam_ReduxToolkit_temp</Link>
                 | <Link to="/Exam_popup">Exam_popup</Link>
                 | <Link to="/Temporary">Temporary</Link>
                 | <Link to="/Test">Test</Link>
@@ -66,8 +74,12 @@ function App() {
                 <Route path="/Exam_Fetch_axios" element={<Exam_Fetch_axios/>}/>
                 <Route path="/Exam_Fetch_axios2" element={<Exam_Fetch_axios2/>}/>
                 <Route path="/Exam_Fetch_axios_api" element={<Exam_Fetch_axios_api/>}/>
-                <Route path="/Exam_ReduxToolkit" element={<Exam_ReduxToolkit/>}/>
+                <Route path="/Exam_ReduxToolkit1" element={<Exam_ReduxToolkit1/>}/>
+                <Route path="/Exam_ReduxToolkit1_2" element={<Exam_ReduxToolkit1_2/>}/>
                 <Route path="/Exam_ReduxToolkit2" element={<Exam_ReduxToolkit2/>}/>
+                <Route path="/Redux_thunk_Exam1" element={<Redux_thunk_Exam1/>}/>
+                <Route path="/Redux_thunk_Exam2" element={<Redux_thunk_Exam2/>}/>
+                <Route path="/Exam_ReduxToolkit_temp" element={<Exam_ReduxToolkit_temp/>}/>
                 <Route path="/Exam_popup" element={<Exam_popup/>}/>
                 <Route path="/Temporary" element={<Temporary/>}/>
                 <Route path="/Test" element={<Test/>}/>

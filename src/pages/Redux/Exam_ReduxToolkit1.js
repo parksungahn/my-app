@@ -8,7 +8,7 @@ import counterSlice2, {init2, up2,down2} from './counterSlice2';
 //--설치
 //-->npm install @reduxjs/toolkit react-redux
 //-https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd/related?hl=ko  크롬유틸설치-개발자모드-리덕스유틸
-const Exam_ReduxToolkit = () => {
+const Exam_ReduxToolkit1 = () => {
 
     const Counter = () => {
         //--useSelector를 이용해 store 에 있는 initialState value값을 가져옴.
@@ -26,13 +26,15 @@ const Exam_ReduxToolkit = () => {
         const initNumber = () => {
             dispatch(init(""));
         };
+
+        //--addNumber 이름을 dispatch 호출이름 up 이랑 같으면 무한호출됨.
         const addNumber = () => {
             // dispatch(counterSlice.actions.up(1);
             dispatch(up(1));
         };
 
         const minusNumber = () => {
-            dispatch(down(-1));
+            dispatch(down(1));
         };
 
         const addNumber2 = () => {
@@ -43,6 +45,8 @@ const Exam_ReduxToolkit = () => {
 
         return (
             <div>
+                <p>Exam_ReduxToolkit1</p>
+
                 <p><button onClick={addNumber}> Add + </button>
                 </p>
 
@@ -75,4 +79,4 @@ const Exam_ReduxToolkit = () => {
     );
 };
 
-export default Exam_ReduxToolkit;
+export default Exam_ReduxToolkit1;

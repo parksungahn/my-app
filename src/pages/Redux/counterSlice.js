@@ -2,14 +2,14 @@ import {createSlice} from '@reduxjs/toolkit';
 
 //--파라미터사용값 action.payload
 const counterSlice = createSlice({
-    name: 'countSlice',
+    name: 'counterSlice',
     initialState: {value: 0},
     reducers: {
         up: (state, action) => {
             state.value = state.value + action.payload;
         }
         , down: (state, action) => {
-            state.value = state.value + action.payload;
+            state.value = state.value - action.payload;
         }
         , init: (state, action) => {
             state.value = 0;
