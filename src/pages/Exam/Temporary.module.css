@@ -1,16 +1,8 @@
-.movieContainner1
-{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background: #eeeeee;
-}
 
-.item
-{
-    border: 1px solid #ff9999;
-    margin: 5px;
-    width:200px;
-    height: 200px;
-    border-radius: 5px;
+.mainborder {
+    border: 1px solid #ff0000;
+    padding: 15px;
+    margin: 15px;
+    color: #606060 ;
+    background: #dddddd;
 }

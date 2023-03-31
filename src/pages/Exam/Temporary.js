@@ -1,68 +1,36 @@
-import React, {useEffect, useState} from 'react';
-import axios from "axios";
+import React, {useState} from 'react';
+import classes from './Temporary.module.css';
 
 
 const Temporary = () => {
 
-    const [data, setData] = useState([]);
-    const [error, setError] = useState(false);
-    const [errorMessage, setErrorMessage] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const[users, setUsers] = useState([
+        {id:0, username:"hong_1", useremail:"hong@gmail.com"}
+        ,{id:1, username:"hong_2", useremail: "hong_2@gmail.com"}
+        ,{id:2, username:"hong_3", useremail: "hong_2@gmail.com"}
+        ,{id:3, username:"hong_4", useremail: "hong_2@gmail.com"}
+        ,{id:4, username:"hong_5", useremail: "hong_2@gmail.com"}
+        ,{id:5, username:"hong_6", useremail: "hong_2@gmail.com"}
+        ,{id:6, username:"hong_7", useremail: "hong_2@gmail.com"}
+    ]);
 
-    useEffect(() => {
-        let unmounted = false;
-        let source = axios.CancelToken.source();
-        axios.get('https://jsonplaceholder.typicode.com/posts/', {
-            cancelToken: source.token,
-            timeout: 5000
-        })
-            .then(response => {
-                if (!unmounted) {
-                    // @ts-ignore
-                    // console.log(response.data);
-                    setData(response.data);
-                    setLoading(false);
-                }
-            }).catch(function (e) {
-            if (!unmounted) {
-                setError(true);
-                setErrorMessage(e.message);
-                setLoading(false);
-                if (axios.isCancel(e)) {
-                    console.log(`request cancelled:${e.message}`);
-                } else {
-                    console.log("another error happened:" + e.message);
-                }
-            }
-        });
-
-        //--이창을 떠날때..Cleanup
-        return function () {
-            unmounted = true;
-            source.cancel("Cancelling in cleanup");
-        };
-    }, []);
-
-
-    const renderList = data.map(
-        items=>{
+    const renderList = users.map(
+        items=> {
             return (
-                <div key={items.id}>
-                    <p>{items.title}</p>
+                <div kye={items.id}>
+                    <div>{items.username}  |  {items.useremail}</div>
                 </div>
             );
         }
     );
 
-
-
     return (
-        <div>hi sanpark
+        <div className={classes.mainborder}>
+            hi sanpark
+            {renderList}
 
-            <p>{renderList}</p>
         </div>
     );
 };
-
 
 export default Temporary;
