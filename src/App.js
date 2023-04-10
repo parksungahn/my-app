@@ -1,6 +1,7 @@
 import {Routes, Route, Link} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Exam_EventHandling from "./pages/Exam/Exam_EventHandling";
 import Exam_useState_count from "./pages/Exam/Exam_useState_count";
 import Exam_useState_input from "./pages/Exam/Exam_useState_input";
 import Exam_useState_multi from "./pages/Exam/Exam_useState_multi";
@@ -32,6 +33,7 @@ function App() {
             <nav>
                   <Link to="/">Home</Link>
                 | <Link to="/about">About</Link>
+                | <Link to="/Exam_EventHandling">Exam_EventHandling</Link>
                 | <Link to="/Exam_useState_count">Exam_useState_count</Link>
                 | <Link to="/Exam_useState_input">Exam_useState_input</Link>
                 | <Link to="/Exam_useState_multi">Exam_useState_multi</Link>
@@ -60,6 +62,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
+                <Route path="/Exam_EventHandling" element={<Exam_EventHandling/>}/>
                 <Route path="/Exam_useState_count" element={<Exam_useState_count/>}/>
                 <Route path="/Exam_useState_input" element={<Exam_useState_input/>}/>
                 <Route path="/Exam_useState_multi" element={<Exam_useState_multi/>}/>

@@ -56,3 +56,11 @@
 //         </Provider>
 //     );
 // };
+import React from "react";
+
+const Redux_thunk_Exam2 = ()=>
+{
+    return <h1>Redux_thunk_Exam2 화면입니다.</h1>;
+}
+
+export default Redux_thunk_Exam2;

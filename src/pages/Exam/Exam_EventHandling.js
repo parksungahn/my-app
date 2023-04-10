@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 
-//--이벤트 핸들링, 클릭, onChange, Enter 키 핸들링
-const Temporary = () => {
+
+const Exam_EventHandling = () => {
 
     const onSubmitCall =
         (arg) => {
@@ -24,13 +24,13 @@ const Temporary = () => {
     };
 
 
-
     return (
         <div>
-            <p><input onKeyUp={onKeyUpCall}/></p>
+            <p><input type="text" onKeyUp={onKeyUpCall}/></p>
             <button onClick={onSubmitCall}>Click</button>
         </div>
     );
+
 };
 
-export default Temporary;
+export default Exam_EventHandling;
