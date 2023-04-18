@@ -1,10 +1,9 @@
 import React, {useEffect, useState, useCallback} from 'react';
 
 //--useCallback 함수
-//--https://www.youtube.com/watch?v=XfUF9qLa3mU&list=PLZ5oZ2KmQEYjwhSxjB_74PoU6pmFzgVMO&index=7
 //--일반함수 사용시, 다른컨트롤로 값변경시 리프레시되서 호출되는 문제를 방지용
 //--number 값이 수정없이, 토글버튼만 클릭해도..number값이 변경되는 오류 방지
-const Temporary = () => {
+const Exam_useCallback = () => {
 
     const [number, setNumber] = useState(0);
     const [toggle, setToggle] = useState(true);
@@ -43,4 +42,4 @@ const Temporary = () => {
     );
 };
 
-export default Temporary;
+export default Exam_useCallback;

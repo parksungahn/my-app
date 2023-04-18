@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-//useState 는 값변경시 화명갱신됨.
+//--웹서비스 호출 useEffect를 이용한 fetch사용
 
 const Exam_Fetch2 = () => {
 
