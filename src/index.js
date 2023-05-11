@@ -3,13 +3,38 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import  {BrowserRouter} from 'react-router-dom'
+
+//--########################### redux 글로벌변수 사용
+import { Provider} from "react-redux";
+import {createStore} from "redux";
+//--########################### redux 글로벌변수 사용
+
+
+//--########################### redux 글로벌변수 사용
+const weight = 100;
+function reducer(state = weight, action)
+{
+    if(action.type === "increase")
+    {
+        state++;
+    }else if(action.type === "decrease")
+    {
+        state--;
+    }
+
+    return state;
+}
+let store = createStore(reducer);
+//--########################### redux 글로벌변수 사용
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-      <App />
+        <Provider store={store}>
+             <App />
+        </Provider>
     </BrowserRouter>
 );
 

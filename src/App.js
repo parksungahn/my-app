@@ -18,8 +18,9 @@ import Exam_Fetch2 from "./pages/Exam/Exam_Fetch2";
 import Exam_Fetch_axios from "./pages/Exam/Exam_Fetch_axios";
 import Exam_Fetch_axios2 from "./pages/Exam/Exam_Fetch_axios2";
 import Exam_Fetch_axios_api from "./pages/Exam/Exam_Fetch_axios_api";
-import Exam_ReduxToolkit1 from "./pages/Redux/Exam_ReduxToolkit1";
-import Exam_ReduxToolkit1_2 from "./pages/Redux/Exam_ReduxToolkit1_2";
+import Exam_redux_legacy from "./pages/Redux0/Exam_redux_legacy";
+import Exam_ReduxToolkit1 from "./pages/Redux1/Exam_ReduxToolkit1";
+import Exam_ReduxToolkit1_2 from "./pages/Redux1/Exam_ReduxToolkit1_2";
 import Exam_ReduxToolkit2 from "./pages/Redux2/Exam_ReduxToolkit2";
 import Redux_thunk_Exam1 from "./pages/Redux_thunk/Redux_thunk_Exam1";
 import Redux_thunk_Exam2 from "./pages/Redux_thunk2/Redux_thunk_Exam2";
@@ -53,6 +54,7 @@ function App() {
                 | <Link to="/Exam_Fetch_axios">Exam_Fetch_axios</Link>
                 | <Link to="/Exam_Fetch_axios2">Exam_Fetch_axios2</Link>
                 | <Link to="/Exam_Fetch_axios_api">Exam_Fetch_axios_api</Link>
+                | <Link to="/Exam_redux_legacy">Exam_redux_legacy</Link>
                 | <Link to="/Exam_ReduxToolkit1">Exam_ReduxToolkit1</Link>
                 | <Link to="/Exam_ReduxToolkit1_2">Exam_ReduxToolkit1_2</Link>
                 | <Link to="/Exam_ReduxToolkit2">Exam_ReduxToolkit2</Link>
@@ -84,6 +86,7 @@ function App() {
                 <Route path="/Exam_Fetch_axios" element={<Exam_Fetch_axios/>}/>
                 <Route path="/Exam_Fetch_axios2" element={<Exam_Fetch_axios2/>}/>
                 <Route path="/Exam_Fetch_axios_api" element={<Exam_Fetch_axios_api/>}/>
+                <Route path="/Exam_redux_legacy" element={<Exam_redux_legacy/>}/>
                 <Route path="/Exam_ReduxToolkit1" element={<Exam_ReduxToolkit1/>}/>
                 <Route path="/Exam_ReduxToolkit1_2" element={<Exam_ReduxToolkit1_2/>}/>
                 <Route path="/Exam_ReduxToolkit2" element={<Exam_ReduxToolkit2/>}/>
