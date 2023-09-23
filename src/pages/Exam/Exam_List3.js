@@ -19,7 +19,7 @@ const Exam_List3 = () => {
     // const renderMovies = movies.filter((movie0)=> movie0.title==='movie1' &&  movie0.email==='app2@gmail.com').map((movie) =>{
     const renderMovies = movies.map((movie) =>{
         return (
-              <Exam_List3_Movie movie={movie}/>
+              <Exam_List3_Movie key={movie.id} movie={movie}/>
         );
     })
 

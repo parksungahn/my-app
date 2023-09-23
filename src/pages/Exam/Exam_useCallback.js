@@ -15,19 +15,24 @@ const Exam_useCallback = () => {
     //     return;
     // };
 
+    //-------------------------------------------------------------------- 한셋트로...설정
+    //--버튼클릭시, 여기 호출되고, Rendering 안일어남.
+    //--number 값이 변경될때..출력
     const someFunction = useCallback(() => {
         console.log(`someFunc: number2: ${number}`);
         return;
     }, [number]);
 
 
-
-
+    //--loading 시 한번탐, number 값변경시마다 호출되고, Rendering 일어남
     useEffect( () => {
         console.log(`someFunction이 변경되었습니다: number: ${number}`);
     }, [someFunction])
+    //-------------------------------------------------------------------- 한셋트로...설정
 
 
+
+    console.log(`Rendering...`);
 
     return (
           <div>

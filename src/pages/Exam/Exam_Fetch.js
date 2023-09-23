@@ -5,7 +5,7 @@ import React, {useState, useEffect} from "react";
 
 const Exam_Fetch = () => {
 
-    const [username, setUsername] = useState("");
+    const [username, setUsername] = useState("appzzang");
 
     async function showAvatar() {
         // github 사용자 정보 읽기
@@ -36,7 +36,7 @@ const Exam_Fetch = () => {
     };
 
     const onClickCall2 = () => {
-        setUsername("hankjoo");
+        setUsername("appzzang");
     };
 
     return (

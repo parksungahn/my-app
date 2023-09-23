@@ -1,44 +1,25 @@
-import React, {useState} from "react";
-
+import React from 'react';
+import Test_Movie from "./Test_Movie";
 
 const Test = () => {
 
+    const movies = [
+        {id: 0, title: 'movie1', year: 2001},
+        {id: 1, title: 'movie2', year: 2002},
+        {id: 2, title: 'movie3', year: 2003},
+        {id: 3, title: 'movie4', year: 2004},
+    ];
 
-    const [number, setNumber] = useState(0);
-
-    const [txtOut, setTxtOut] = useState("test");
-
-    const inCrease = () =>
-    {
-
-        const arrayA = [1,2,3];
-        const arrayB = [4,5,6];
-
-        const arrayC = [...arrayA, ...arrayB];
-
-
-        const objA = { a:1, b:2};
-
-        const objB = {...objA};
-
-        const objC = {
-            aa:"hello"
-            ,bb:"world"
-        }
-
-        console.log(objC);
-        setTxtOut(objC.aa);
+    const renderMoview = movies.map((movie) => {
+        return (
+            <Test_Movie key={movie.id} movie={movie}/>
+        );
+    });
 
 
-    }
-
-
-    return (
-        <div>
-
-            <input type="button" value="button+" onClick={inCrease} />
-            <p>number => {number}</p>
-            <p>txtOut => {txtOut}</p>
+    return(
+        <div >
+            {renderMoview}
         </div>
     );
 };
