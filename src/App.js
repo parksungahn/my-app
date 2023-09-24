@@ -28,6 +28,11 @@ import Exam_ReduxToolkit_temp from "./pages/Redux2_temp/Exam_ReduxToolkit_temp";
 import Exam_popup from "./pages/Exam/Exam_popup";
 import Temporary from "./pages/Exam/Temporary";
 import Test from "./pages/Exam/Test";
+import New_useMemo1 from "./pages/Exam_new/New_useMemo1";
+import New_useMemo1_solve from "./pages/Exam_new/New_useMemo1_solve";
+import New_useMemo2 from "./pages/Exam_new/New_useMemo2";
+import New_useMemo3 from "./pages/Exam_new/New_useMemo3";
+import New_useMemo3_solve from "./pages/Exam_new/New_useMemo3_solve";
 
 
 
@@ -64,6 +69,11 @@ function App() {
                 | <Link to="/Exam_popup">Exam_popup</Link>
                 | <Link to="/Temporary">Temporary</Link>
                 | <Link to="/Test">Test</Link>
+                |------------------- New -----------------<Link to="/New_useMemo1">New_useMemo1</Link>
+                | <Link to="/New_useMemo1_solve">New_useMemo1_solve</Link>
+                | <Link to="/New_useMemo2">New_useMemo2</Link>
+                | <Link to="/New_useMemo3">New_useMemo3</Link>
+                | <Link to="/New_useMemo3_solve">New_useMemo3_solve</Link>
             </nav>
 
             <Routes>
@@ -96,6 +106,11 @@ function App() {
                 <Route path="/Exam_popup" element={<Exam_popup/>}/>
                 <Route path="/Temporary" element={<Temporary/>}/>
                 <Route path="/Test" element={<Test/>}/>
+                <Route path="/New_useMemo1" element={<New_useMemo1/>}/>
+                <Route path="/New_useMemo1_solve" element={<New_useMemo1_solve/>}/>
+                <Route path="/New_useMemo2" element={<New_useMemo2/>}/>
+                <Route path="/New_useMemo3" element={<New_useMemo3/>}/>
+                <Route path="/New_useMemo3_solve" element={<New_useMemo3_solve/>}/>
             </Routes>
         </div>
     );
