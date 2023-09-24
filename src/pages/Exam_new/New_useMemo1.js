@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 //--------------쉬운계산기, 어려운계산기 호출할때마다.. 둘다 호출됨.
-//--별코딩(useMemo제대로 사용하) 참조 https://www.youtube.com/watch?v=e-CnI8Q5RY4기
+//--별코딩(useMemo제대로 사용하기) 참조 https://www.youtube.com/watch?v=e-CnI8Q5RY4
 
 const hardCalculate = (number) => {
     console.log('어려운 계산기----------------');
@@ -25,8 +25,12 @@ const New_useMemo1 = () => {
 
     return(
         <div>
-            <span>--------------쉬운계산기, 어려운계산기 호출할때마다.. 둘다 호출됨.--------------</span>
 
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <span>--------------쉬운계산기, 어려운계산기 호출할때마다.. 둘다 호출됨.--------------</span>
             <h3>어려운 계산기</h3>
             <input
                 type="number"

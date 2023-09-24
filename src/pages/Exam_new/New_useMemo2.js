@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 //--------------Number나, location 변경시..영향안받음..(일반변수)
-//--별코딩(useMemo제대로 사용하) 참조 https://www.youtube.com/watch?v=e-CnI8Q5RY4기
+//--별코딩(useMemo제대로 사용하기) 참조 https://www.youtube.com/watch?v=e-CnI8Q5RY4
 const New_useMemo2 = () => {
 
 
@@ -17,6 +17,10 @@ const New_useMemo2 = () => {
 
     return(
         <div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <span>--------------Number나, location 변경시..영향안받음..(일반변수)--------------</span>
 
             <h3>하루에 몇끼 먹어요?</h3>

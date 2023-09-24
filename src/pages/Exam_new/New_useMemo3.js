@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from "react";
 
 //--------------Number나, location 변경시..오브젝트변수는 동일하게 인식해서 렌더링됨. X
-//--별코딩(useMemo제대로 사용하) 참조 https://www.youtube.com/watch?v=e-CnI8Q5RY4기
+//--별코딩(useMemo제대로 사용하기) 참조 https://www.youtube.com/watch?v=e-CnI8Q5RY4
 
 const New_useMemo3 = () => {
 
@@ -21,6 +21,10 @@ const New_useMemo3 = () => {
 
     return(
         <div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <span>--------------Number나, location 변경시..오브젝트변수는 동일하게 인식해서 렌더링됨. X --------------</span>
 
             <h3>하루에 몇끼 먹어요?</h3>
