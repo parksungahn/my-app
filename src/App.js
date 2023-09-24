@@ -35,6 +35,8 @@ import New_useMemo3 from "./pages/Exam_new/New_useMemo3";
 import New_useMemo3_solve from "./pages/Exam_new/New_useMemo3_solve";
 import New_useCallback1 from "./pages/Exam_new/New_useCallback1";
 import New_useCallback1_solve from "./pages/Exam_new/New_useCallback1_solve";
+import React from "react";
+import New_Test from "./pages/Exam_new/New_Test";
 
 
 
@@ -78,6 +80,7 @@ function App() {
                 | <Link to="/New_useMemo3_solve">New_useMemo3_solve</Link>
                 | <Link to="/New_useCallback1">New_useCallback1</Link>
                 | <Link to="/New_useCallback1_solve">New_useCallback1_solve</Link>
+                | <Link to="/New_Test">New_Test</Link>
             </nav>
 
             <Routes>
@@ -117,6 +120,7 @@ function App() {
                 <Route path="/New_useMemo3_solve" element={<New_useMemo3_solve/>}/>
                 <Route path="/New_useCallback1" element={<New_useCallback1/>}/>
                 <Route path="/New_useCallback1_solve" element={<New_useCallback1_solve/>}/>
+                <Route path="/New_Test" element={<New_Test/>}/>
             </Routes>
         </div>
     );
