@@ -37,6 +37,10 @@ import New_useCallback1 from "./pages/Exam_new/New_useCallback1";
 import New_useCallback1_solve from "./pages/Exam_new/New_useCallback1_solve";
 import React from "react";
 import New_Test from "./pages/Exam_new/New_Test";
+import New_ref from "./pages/Exam_new/New_ref";
+import New_ref2 from "./pages/Exam_new/New_ref2";
+import New_customHook from "./pages/Exam_new/New_customHook";
+import New_useFetch from "./pages/Exam_new/New_useFetch";
 
 
 
@@ -80,6 +84,10 @@ function App() {
                 | <Link to="/New_useMemo3_solve">New_useMemo3_solve</Link>
                 | <Link to="/New_useCallback1">New_useCallback1</Link>
                 | <Link to="/New_useCallback1_solve">New_useCallback1_solve</Link>
+                | <Link to="/New_ref">New_ref</Link>
+                | <Link to="/New_ref2">New_ref2</Link>
+                | <Link to="/New_customHook">New_customHook</Link>
+                | <Link to="/New_useFetch">New_useFetch</Link>
                 | <Link to="/New_Test">New_Test</Link>
             </nav>
 
@@ -120,6 +128,10 @@ function App() {
                 <Route path="/New_useMemo3_solve" element={<New_useMemo3_solve/>}/>
                 <Route path="/New_useCallback1" element={<New_useCallback1/>}/>
                 <Route path="/New_useCallback1_solve" element={<New_useCallback1_solve/>}/>
+                <Route path="/New_ref" element={<New_ref/>}/>
+                <Route path="/New_ref2" element={<New_ref2/>}/>
+                <Route path="/New_customHook" element={<New_customHook/>}/>
+                <Route path="/New_useFetch" element={<New_useFetch/>}/>
                 <Route path="/New_Test" element={<New_Test/>}/>
             </Routes>
         </div>

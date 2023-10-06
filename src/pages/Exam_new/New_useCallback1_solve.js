@@ -7,10 +7,11 @@ const New_useCallback1_solve = () => {
 
     const [number, setNumber] = useState(0);
 
+    //--의존성 배열에 number 를 해줘야., 값이 변경되면..함수를 다시 생성해야함.
     const someFunction = useCallback(() => {
         console.log(`someFunct: number : ${number}`);
         return;
-    },[]);
+    },[number]);
 
     useEffect(() => {
         console.log('someFunction이 변경되었습니다.');
