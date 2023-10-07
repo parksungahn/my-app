@@ -41,6 +41,7 @@ import New_ref from "./pages/Exam_new/New_ref";
 import New_ref2 from "./pages/Exam_new/New_ref2";
 import New_customHook from "./pages/Exam_new/New_customHook";
 import New_useFetch from "./pages/Exam_new/New_useFetch";
+import New_map_value from "./pages/Exam_new/New_map_value";
 
 
 
@@ -88,6 +89,7 @@ function App() {
                 | <Link to="/New_ref2">New_ref2</Link>
                 | <Link to="/New_customHook">New_customHook</Link>
                 | <Link to="/New_useFetch">New_useFetch</Link>
+                | <Link to="/New_map_value">New_map_value</Link>
                 | <Link to="/New_Test">New_Test</Link>
             </nav>
 
@@ -132,6 +134,7 @@ function App() {
                 <Route path="/New_ref2" element={<New_ref2/>}/>
                 <Route path="/New_customHook" element={<New_customHook/>}/>
                 <Route path="/New_useFetch" element={<New_useFetch/>}/>
+                <Route path="/New_map_value" element={<New_map_value/>}/>
                 <Route path="/New_Test" element={<New_Test/>}/>
             </Routes>
         </div>

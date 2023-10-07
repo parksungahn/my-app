@@ -1,7 +1,10 @@
 import React, {useCallback, useEffect, useMemo, useRef, useState} from "react";
 import {queries} from "@testing-library/react";
 
-const New_Test = () =>{
+//----배열오브젝트 for 문으로...값변경
+//--{앞엔..기본값가져와서 초기값변경가능}
+//--{두번째는 리턴값 변형.}
+const New_map_value = () =>{
 
     const [number, setNumber] = useState(0);
 
@@ -13,7 +16,7 @@ const New_Test = () =>{
     const flightScheduleList = useMemo(() =>
                 person?.map(
                     ({
-                         carr:{ carr = 'KE' },
+                         carr: carr = 'KE' ,   //--api에서. carr: code 형태일떈   =>  carr:{value: carr = 'KE'} ,
                          fltnum ,
                      }) => ({
                         carr: carr,
@@ -33,4 +36,4 @@ const New_Test = () =>{
     );
 };
 
-export default New_Test;
+export default New_map_value;
